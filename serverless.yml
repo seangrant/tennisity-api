@@ -7,9 +7,21 @@ provider:
   runtime: nodejs6.10
   stage: dev
   region: ap-southeast-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:BatchGetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:ap-southeast-2:*:table/users"
 
 plugins:
   - serverless-offline
+  - serverless-dynamodb-local
   - serverless-webpack
 
 custom:
@@ -19,6 +31,11 @@ custom:
       presets: ["es2015", "stage-2"]
   webpack: webpack.config.js
   webpackIncludeModules: true
+  dynamodb:
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true
 
 functions:
   graphql:
@@ -42,3 +59,21 @@ functions:
         path: graphiql
         method: post
         cors: true
+
+resources:
+  Resources:
+    UserTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        KeySchema:
+          -
+            AttributeName: id
+            KeyType: HASH
+        AttributeDefinitions:
+          -
+            AttributeName: id
+            AttributeType: S
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: 'users'
