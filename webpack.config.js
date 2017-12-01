@@ -12,21 +12,15 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: [
-          'imports-loader?graphql',
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['es2015'],
-            },
-          },
-        ],
-      },
-    ],
+        loader: 'babel-loader',
+        include: __dirname,
+        exclude: /node_modules/
+      }
+    ]
   },
   output: {
     libraryTarget: 'commonjs',
     path: path.join(__dirname, '.webpack'),
-    filename: '[name].js',
-  },
+    filename: '[name].js'
+  }
 };
