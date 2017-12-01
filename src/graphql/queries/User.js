@@ -12,7 +12,6 @@ export default {
     }
   },
   resolve(parent, args) {
-    console.log('@@@@@@@@@');
     return getUser(parent, args);
   }
 };

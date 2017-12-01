@@ -3,9 +3,9 @@
 const GraphQL = require('graphql');
 const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLInt } = GraphQL;
 
-const PostType = new GraphQL.GraphQLObjectType({
-  name: 'Post',
-  description: 'Post Type, For all the posts present in Reddit.',
+export default new GraphQLObjectType({
+  name: 'User',
+  description: 'User Type',
 
   fields: () => ({
     id: {
@@ -22,5 +22,3 @@ const PostType = new GraphQL.GraphQLObjectType({
     }
   })
 });
-
-module.exports = PostType;
