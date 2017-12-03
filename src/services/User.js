@@ -1,4 +1,47 @@
 import CognitoExpress from 'cognito-express';
+import AWS from 'aws-sdk';
+
+AWS.config.update({ region: 'ap-southeast-2' });
+
+const dynamo = new AWS.DynamoDB.DocumentClient();
+
+const get = (id, callback) => {
+  var params = {
+    TableName: 'users',
+    KeyConditionExpression: 'id = :a',
+    ExpressionAttributeValues: {
+      ':a': id
+    }
+  };
+
+  dynamo.query(params, callback);
+};
+
+const create = ({ id, name, email }, callback) => {
+  const params = {
+    TableName: 'users',
+    Item: {
+      id,
+      name,
+      email,
+      createdAt: new Date().getTime()
+    }
+  };
+  dynamo.put(params, callback);
+};
+
+export const createUser = ({ id, name, email }) => {
+  return new Promise((resolve, reject) => {
+    create({ id, name, email }, (err, result) => {
+      console.log({ err, result });
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
+};
 
 const cognitoExpress = new CognitoExpress({
   region: 'ap-southeast-2',
@@ -29,9 +72,35 @@ const extractToken = req => {
 export const signupUser = async ({ args: { email, name }, req }) => {
   try {
     const response = await extractToken(req);
-    console.log({ id: response['cognito:username'], email, name });
-    // console.log({ email, name, response });
+    const params = { id: response['cognito:username'], email, name };
+
+    const result = await createUser(params);
+    return true;
   } catch (err) {
     console.log({ err });
+    return false;
+  }
+};
+
+export const getUser = id => {
+  return new Promise((resolve, reject) => {
+    get(id, (err, result) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result.Items[0]);
+      }
+    });
+  });
+};
+
+export const currentUser = async req => {
+  try {
+    const response = await extractToken(req);
+    const user = getUser(response['cognito:username']);
+    return user;
+  } catch (err) {
+    console.log({ err });
+    return false;
   }
 };
