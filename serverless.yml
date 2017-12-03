@@ -77,3 +77,19 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: 'users'
+
+  TeamTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      KeySchema:
+        -
+          AttributeName: id
+          KeyType: HASH
+      AttributeDefinitions:
+        -
+          AttributeName: id
+          AttributeType: S
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      TableName: 'teams'
