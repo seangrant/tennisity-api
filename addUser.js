@@ -1,4 +1,4 @@
-import { addUser } from './graphql/services/User';
+import { addUser } from './src/services/User';
 
 export function success(body) {
   return buildResponse(200, body);
