@@ -1,7 +1,7 @@
 import express from 'express';
 import body_parser from 'body-parser';
 import CognitoExpress from 'cognito-express';
-
+import cors from 'cors';
 import expressGraphQL from 'express-graphql';
 import schema from './graphql/schema';
 
@@ -13,7 +13,7 @@ const cognitoExpress = new CognitoExpress({
 });
 
 const app = express();
-
+app.use(cors());
 app.use(body_parser.json({ limit: '50mb' }));
 
 const graphqlRoute = expressGraphQL(() => {

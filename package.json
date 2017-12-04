@@ -33,7 +33,7 @@
     "babel-runtime": "^6.25.0",
     "body-parser": "^1.15.2",
     "cognito-express": "^2.0.5",
-    "cors": "2.8.4",
+    "cors": "^2.8.4",
     "env-cmd": "^5.0.0",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",

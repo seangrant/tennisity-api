@@ -17,6 +17,8 @@ const get = (id, callback) => {
   dynamo.query(params, callback);
 };
 
+export const addUser = params => dynamo.put(params);
+
 const create = ({ id, name, email }, callback) => {
   const params = {
     TableName: 'users',
@@ -25,7 +27,8 @@ const create = ({ id, name, email }, callback) => {
       name,
       email,
       createdAt: new Date().getTime()
-    }
+    },
+    ConditionExpression: 'attribute_not_exists(id)'
   };
   dynamo.put(params, callback);
 };

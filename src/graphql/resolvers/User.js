@@ -16,18 +16,6 @@ const get = (id, callback) => {
   dynamo.query(params, callback);
 };
 
-const create = ({ id, name, email }, callback) => {
-  const params = {
-    TableName: 'users',
-    Item: {
-      id,
-      name,
-      email,
-      createdAt: new Date().getTime()
-    }
-  };
-  dynamo.put(params, callback);
-};
 export const getUser = (parent, args) => {
   return new Promise((resolve, reject) => {
     get(args.id, (err, result) => {
@@ -35,19 +23,6 @@ export const getUser = (parent, args) => {
         reject(err);
       } else {
         resolve(result.Items[0]);
-      }
-    });
-  });
-};
-
-export const createUser = ({ id, name, email }) => {
-  return new Promise((resolve, reject) => {
-    create({ id, name, email }, (err, result) => {
-      console.log({ err, result });
-      if (err) {
-        reject(err);
-      } else {
-        resolve();
       }
     });
   });
