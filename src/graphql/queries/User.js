@@ -15,3 +15,10 @@ export default {
     return getUser(parent, args);
   }
 };
+
+
+
+
+export const teams {
+  type: TeamType
+}

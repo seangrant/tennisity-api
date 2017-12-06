@@ -59,15 +59,7 @@ functions:
         path: graphiql
         method: post
         cors: true
-  addUser:
-    handler: addUser.main
-    events:
-      - http:
-          path: useradd
-          method: post
-          cors: true
-          authorizer: aws_iam
-
+        
 resources:
   Resources:
     UserTable:

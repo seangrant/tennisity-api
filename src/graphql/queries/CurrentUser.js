@@ -2,7 +2,7 @@ import { GraphQLList, GraphQLString, GraphQLNonNull } from 'graphql';
 import UserType from '../types/User';
 import { getUser } from '../resolvers/User';
 import { currentUser } from '../../services/User';
-console.log('fred', currentUser);
+
 export default {
   type: UserType,
   description:
