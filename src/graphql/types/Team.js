@@ -2,12 +2,14 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLID,
-  GraphQLInt
+  GraphQLInt,
+  GraphQLList
 } from 'graphql';
 
 import sectionType from './Section';
-
+import matchType from './Match';
 import { getSection } from '../../services/Section';
+import { getScoreForTeam, getMatchesForTeam } from '../../services/Match';
 
 export default new GraphQLObjectType({
   name: 'Team',
@@ -37,7 +39,17 @@ export default new GraphQLObjectType({
     },
     score: {
       type: GraphQLInt,
-      description: 'current score for team'
+      description: 'current score for team',
+      resolve(parent, args) {
+        return getScoreForTeam(parent.id);
+      }
+    },
+    matches: {
+      type: new GraphQLList(matchType),
+      description: 'Matches for this team',
+      resolve(parent, args) {
+        return getMatchesForTeam(parent.id);
+      }
     }
   })
 });
