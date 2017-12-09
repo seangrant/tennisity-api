@@ -21,7 +21,7 @@ const Matches = [
     awayScore: 3,
     round: 1,
     tournament: 45,
-    club: 1
+    club: 2
   },
   {
     category: 'MONDAY_LADIES',
@@ -32,7 +32,7 @@ const Matches = [
     awayScore: 3,
     round: 1,
     tournament: 45,
-    club: 1
+    club: 3
   }
 ];
 

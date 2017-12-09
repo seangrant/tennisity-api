@@ -36,7 +36,6 @@ const create = ({ id, name, email }, callback) => {
 export const createUser = ({ id, name, email }) => {
   return new Promise((resolve, reject) => {
     create({ id, name, email }, (err, result) => {
-      console.log({ err, result });
       if (err) {
         reject(err);
       } else {
@@ -80,7 +79,6 @@ export const signupUser = async ({ args: { email, name }, req }) => {
     const result = await createUser(params);
     return true;
   } catch (err) {
-    console.log({ err });
     return false;
   }
 };

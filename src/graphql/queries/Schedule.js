@@ -8,7 +8,6 @@ import {
 
 import ScheduleType from '../types/Schedule';
 import { getSchedule } from '../../services/Schedule';
-console.log({ getSchedule });
 export default {
   type: ScheduleType,
   description:

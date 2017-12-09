@@ -1,5 +1,6 @@
 const clubs = [
   {
+    id: 1,
     name: 'Burnt Bridge',
     address1: 'Peter Vergers Reserve',
     contact: 'Peter Arnot',
@@ -9,6 +10,7 @@ const clubs = [
     contactPhone: '9876 2663'
   },
   {
+    id: 2,
     name: 'Chirnside Park',
     address1: '68 Kingswood Drive',
     contact: 'Barbara Kelly',
@@ -18,6 +20,7 @@ const clubs = [
     contactPhone: '9726 7723'
   },
   {
+    id: 3,
     name: 'Croydon',
     address1: 'Croydon Park',
     contact: 'Gran Kendall',
@@ -27,6 +30,7 @@ const clubs = [
     contactPhone: '0414 584610'
   },
   {
+    id: 4,
     name: 'East Croydon Kilsyth',
     address1: 'Cnr. Hull Road & Sabato Street',
     contact: 'Mike Drummond',
@@ -36,6 +40,7 @@ const clubs = [
     contactPhone: '9725 7592'
   },
   {
+    id: 5,
     name: 'East Ringwood',
     address1: 'Cnr. Mt. Dandenong & Dublin Roads',
     contact: 'Joan Carter',
@@ -45,6 +50,7 @@ const clubs = [
     contactPhone: '0428 227837'
   },
   {
+    id: 6,
     name: 'Eastern Golf',
     address1: '215 Victoria Road',
     contact: 'John Hampson',
@@ -54,6 +60,7 @@ const clubs = [
     contactPhone: '0419 188 908'
   },
   {
+    id: 7,
     name: 'Gracedale Park',
     address1: 'Gracedale Avenue',
     contact: 'Brian Cook',
@@ -63,6 +70,7 @@ const clubs = [
     contactPhone: '9870 0493'
   },
   {
+    id: 8,
     name: 'Heathmont',
     address1: 'Cnr. Canterbury Road & Waterloo St.',
     contact: 'Aidan Searle',
@@ -72,6 +80,7 @@ const clubs = [
     contactPhone: '9720 8875 / 0466 116402'
   },
   {
+    id: 9,
     name: 'Lilydale',
     address1: 'Cnr. Anderson & Hardy St.',
     contact: 'Kerry Cardwell',
@@ -81,6 +90,7 @@ const clubs = [
     contactPhone: '9726 0631'
   },
   {
+    id: 10,
     name: 'Manchester Heights',
     address1: 'Cnr. Croydonvale Drive & Ellen Road',
     contact: 'Mal Wrigglesworth',
@@ -90,6 +100,7 @@ const clubs = [
     contactPhone: '0408 503668'
   },
   {
+    id: 11,
     name: 'Miller Park',
     address1: 'Cnr. Mountain Hwy & Liverpool Road',
     contact: 'Joy Chirnside',
@@ -99,6 +110,7 @@ const clubs = [
     contactPhone: '0417 018044'
   },
   {
+    id: 12,
     name: 'Mooroolbark',
     address1: 'Kiloran Park (off Hawthory Road)',
     contact: 'Geoff McKenzie',
@@ -108,6 +120,7 @@ const clubs = [
     contactPhone: '9725 4158 / 0431 171075'
   },
   {
+    id: 13,
     name: 'Mount Evelyn',
     address1: 'Birmingham Road',
     contact: 'Matt O’Toole',
@@ -117,6 +130,7 @@ const clubs = [
     contactPhone: '0425 711879'
   },
   {
+    id: 14,
     name: 'North Ringwood',
     address1: 'Warrandyte Road',
     contact: 'Sylvia & Rosemary James',
@@ -126,6 +140,7 @@ const clubs = [
     contactPhone: '9876 5564'
   },
   {
+    id: 15,
     name: 'Park Orchards',
     address1: 'Cnr. Granard Ave & Park Road',
     contact: 'Pota Marmarou',
@@ -135,6 +150,7 @@ const clubs = [
     contactPhone: '9879 0995 / 0419 390482'
   },
   {
+    id: 16,
     name: 'Parkwood',
     address1: 'Quambie Reserve',
     contact: 'Josh Mackwell',
@@ -144,6 +160,7 @@ const clubs = [
     contactPhone: '9879 9009 / 0408 307782'
   },
   {
+    id: 17,
     name: 'Parker Reserve',
     address1: 'Parker Reserve, Heathmont Road',
     contact: 'Chris Wishart',
@@ -154,6 +171,7 @@ const clubs = [
     contactPhone: '9729 3662'
   },
   {
+    id: 18,
     name: 'Ringwood Catholic',
     address1: 'Great Ryrie Street (adj. Aquinas College)',
     contact: 'Helen Abbott',
@@ -163,6 +181,7 @@ const clubs = [
     contactPhone: '0401 999460'
   },
   {
+    id: 19,
     name: 'Ringwood',
     address1: 'Jubilee Park',
     contact: 'Kim De',
@@ -172,6 +191,7 @@ const clubs = [
     contactPhone: '0418 303638'
   },
   {
+    id: 20,
     name: 'Warrandyte',
     address1: 'Taroona Avenue',
     contact: 'Alistair Tudor',
@@ -181,6 +201,7 @@ const clubs = [
     contactPhone: '0430 898394'
   },
   {
+    id: 21,
     name: 'Wonga Park',
     address1: 'Old Yarra Road',
     contact: 'Emily Dellavedova',
@@ -190,6 +211,7 @@ const clubs = [
     contactPhone: '0448 808229'
   },
   {
+    id: 22,
     name: 'Yarra Glen',
     address1: 'Anzac Avenue',
     contact: 'Kerry Davies',

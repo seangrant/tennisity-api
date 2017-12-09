@@ -6,8 +6,9 @@ import {
 } from 'graphql';
 
 import teamType from './Team';
-
+import clubType from './Club';
 import { getTeamById } from '../../services/Team';
+import { getClubById } from '../../services/Club';
 
 export default new GraphQLObjectType({
   name: 'Match',
@@ -26,9 +27,7 @@ export default new GraphQLObjectType({
       type: teamType,
       description: 'The Home team',
       resolve(parent, args) {
-        const a = getTeamById(parent.homeTeamId);
-        console.log(a);
-        return a;
+        return getTeamById(parent.homeTeamId);
       }
     },
     homeTeamScore: {
@@ -49,6 +48,13 @@ export default new GraphQLObjectType({
     round: {
       type: GraphQLInt,
       description: 'The round the match is played'
+    },
+    club: {
+      type: clubType,
+      description: 'The club the match is being played',
+      resolve({ club }, args) {
+        return getClubById(club);
+      }
     }
   })
 });

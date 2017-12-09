@@ -74,7 +74,6 @@ export default new GraphQLObjectType({
       type: new GraphQLList(RoundType),
       description: 'section ranking, i.e. MONDAY_LADIES_3',
       resolve(parent, args, a, b) {
-        console.log({ args, parent });
         return [];
       }
     }

@@ -51,4 +51,6 @@ export const getSchedule = ({ category, ranking }) => {
     ranking
   };
 };
-// export const resolveRounds({category, ranking}, rounds)
+// export const resolveRounds({category, ranking}) => {
+//     schedule.rounds.map()
+// }

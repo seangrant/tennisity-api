@@ -34,7 +34,6 @@ export async function main(event, context, callback) {
     await addUser(params);
     callback(null, success(params.Item));
   } catch (e) {
-    console.log({ e });
     callback(null, failure({ status: false }));
   }
 }

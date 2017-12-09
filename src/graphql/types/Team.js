@@ -32,9 +32,7 @@ export default new GraphQLObjectType({
       type: sectionType,
       description: 'team`s current section',
       resolve(parent, args) {
-        console.log({ parent });
         return getSection(parent.category);
-        //return getSection(parent.)
       }
     },
     score: {

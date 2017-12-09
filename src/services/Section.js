@@ -7,7 +7,7 @@ const sections = {
   }
 };
 
-export const getSection = id => sections[id];
+export const getSection = (id, ranking) => sections[id];
 
 // {
 //   teams(group: "MONDAY_LADIES", section: 5){
