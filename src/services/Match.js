@@ -11,6 +11,28 @@ const Matches = [
     round: 1,
     tournament: 45,
     club: 1
+  },
+  {
+    category: 'MONDAY_LADIES',
+    ranking: 1,
+    homeTeamId: 3,
+    homeScore: 3,
+    awayTeamId: 4,
+    awayScore: 3,
+    round: 1,
+    tournament: 45,
+    club: 1
+  },
+  {
+    category: 'MONDAY_LADIES',
+    ranking: 1,
+    homeTeamId: 5,
+    homeScore: 3,
+    awayTeamId: 6,
+    awayScore: 3,
+    round: 1,
+    tournament: 45,
+    club: 1
   }
 ];
 
