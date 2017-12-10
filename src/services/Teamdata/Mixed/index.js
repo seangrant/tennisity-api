@@ -1,214 +1,209 @@
-
-
 const mixed = [
   {
-    id: 1,
+    id: 114,
     category: 3,
     ranking: 1,
     name: 'WALLIES'
   },
   {
-    id: 2,
+    id: 115,
     category: 3,
     ranking: 1,
     name: 'SINNE T'
   },
   {
-    id: 3,
+    id: 116,
     category: 3,
     ranking: 1,
     name: 'BUM NUTS'
   },
   {
-    id: 4,
+    id: 117,
     category: 3,
     ranking: 1,
     name: 'REGULATORS'
   },
   {
-    id: 5,
+    id: 118,
     category: 3,
     ranking: 1,
     name: 'SECOND SERVE'
   },
   {
-    id: 6,
+    id: 119,
     category: 3,
     ranking: 1,
     name: 'MIXED SHOTS'
   },
-
-
-
   {
-    id: 1,
+    id: 120,
     category: 3,
     ranking: 2,
     name: 'NO GO ZONE'
   },
   {
-    id: 2,
+    id: 121,
     category: 3,
     ranking: 2,
     name: 'HIGHLY STRUNG'
   },
   {
-    id: 3,
+    id: 122,
     category: 3,
     ranking: 2,
     name: 'BRING YOUR ESKI'
   },
   {
-    id: 4,
+    id: 123,
     category: 3,
     ranking: 2,
     name: 'LATE STARTERS'
   },
   {
-    id: 5,
+    id: 124,
     category: 3,
     ranking: 2,
     name: 'DYNAMOS'
   },
   {
-    id: 6,
+    id: 125,
     category: 3,
     ranking: 2,
     name: 'AWESOME 4SOME'
   },
   {
-    id: 1,
+    id: 126,
     category: 3,
     ranking: 3,
     name: 'HORSEMAN'
   },
   {
-    id: 2,
+    id: 127,
     category: 3,
     ranking: 3,
     name: 'WACKAS'
   },
   {
-    id: 3,
+    id: 128,
     category: 3,
     ranking: 3,
     name: 'WHACK ITS'
   },
   {
-    id: 4,
+    id: 129,
     category: 3,
     ranking: 3,
     name: 'LOFT'
   },
   {
-    id: 5,
+    id: 130,
     category: 3,
     ranking: 3,
     name: 'IN TUNE'
   },
   {
-    id: 6,
+    id: 131,
     category: 3,
     ranking: 3,
     name: 'FIREBALL'
   },
   {
-    id: 1,
+    id: 132,
     category: 3,
     ranking: 4,
     name: 'TEDDY WESTSIDE'
   },
   {
-    id: 2,
+    id: 133,
     category: 3,
     ranking: 4,
     name: 'PARKERS PRIDE'
   },
   {
-    id: 3,
+    id: 134,
     category: 3,
     ranking: 4,
     name: 'WIPE OUTS'
   },
   {
-    id: 4,
+    id: 135,
     category: 3,
     ranking: 4,
     name: 'ROCKETS'
   },
   {
-    id: 5,
+    id: 136,
     category: 3,
     ranking: 4,
     name: 'FLAT BALLS'
   },
   {
-    id: 6,
+    id: 137,
     category: 3,
     ranking: 4,
     name: 'EZ BEATS'
   },
 
   {
-    id: 1,
+    id: 138,
     category: 3,
     ranking: 5,
     name: 'THEM'
   },
   {
-    id: 2,
+    id: 139,
     category: 3,
     ranking: 5,
     name: 'GOOD GETS'
   },
   {
-    id: 3,
+    id: 140,
     category: 3,
     ranking: 5,
-    name: 'HOW'S THAT'
+    name: "HOW'S THAT"
   },
   {
-    id: 4,
+    id: 141,
     category: 3,
     ranking: 5,
     name: 'HALL OF FRAMERS'
   },
   {
-    id: 5,
+    id: 142,
     category: 3,
     ranking: 5,
     name: 'COARSE'
   },
   {
-    id: 1,
+    id: 143,
     category: 3,
     ranking: 6,
     name: 'HAVE A HIT'
   },
   {
-    id: 2,
+    id: 144,
     category: 3,
     ranking: 6,
-    name: 'WHAT\'S FOR DINNER'
+    name: "WHAT'S FOR DINNER"
   },
   {
-    id: 3,
+    id: 145,
     category: 3,
     ranking: 6,
     name: 'U JUST GOT SERVED'
   },
   {
-    id: 4,
+    id: 146,
     category: 3,
     ranking: 6,
     name: 'ONE HIT WONDERS'
   },
   {
-    id: 5,
+    id: 147,
     category: 3,
     ranking: 6,
     name: 'FAMILY FUN'
-  },
-]
+  }
+];
 
-export default mixed
+export default mixed;

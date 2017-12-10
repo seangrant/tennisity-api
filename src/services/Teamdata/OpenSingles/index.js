@@ -1,193 +1,193 @@
 const openSingles = [
   {
-    id: 1,
+    id: 148,
     category: 4,
     ranking: 1,
     name: "3G'S"
   },
   {
-    id: 2,
+    id: 149,
     category: 4,
     ranking: 1,
     name: 'STILLWELLS'
   },
   {
-    id: 3,
+    id: 150,
     category: 4,
     ranking: 1,
     name: 'BATTLERS'
   },
   {
-    id: 4,
+    id: 151,
     category: 4,
     ranking: 1,
     name: 'COURT JESTERS'
   },
   {
-    id: 5,
+    id: 152,
     category: 4,
     ranking: 1,
     name: 'FAMILY TIES'
   },
   {
-    id: 6,
+    id: 153,
     category: 4,
     ranking: 1,
     name: 'CRISIS'
   },
 
   {
-    id: 1,
+    id: 154,
     category: 4,
     ranking: 2,
     name: 'BEER PIGS'
   },
   {
-    id: 2,
+    id: 155,
     category: 4,
     ranking: 2,
     name: "WHAT'S THE SCORE"
   },
   {
-    id: 3,
+    id: 156,
     category: 4,
     ranking: 2,
     name: 'OLD BOYS'
   },
   {
-    id: 4,
+    id: 157,
     category: 4,
     ranking: 2,
     name: 'NUMB THE AREA'
   },
   {
-    id: 5,
+    id: 158,
     category: 4,
     ranking: 2,
     name: 'WONGA WIZARDS'
   },
   {
-    id: 6,
+    id: 159,
     category: 4,
     ranking: 2,
     name: 'KAOS'
   },
   {
-    id: 1,
+    id: 160,
     category: 4,
     ranking: 3,
     name: 'SANDBAGGERS'
   },
   {
-    id: 2,
+    id: 161,
     category: 4,
     ranking: 3,
     name: 'BOOTSTRAPS'
   },
   {
-    id: 3,
+    id: 162,
     category: 4,
     ranking: 3,
     name: 'SUPERSLICERS'
   },
   {
-    id: 4,
+    id: 163,
     category: 4,
     ranking: 3,
     name: 'WHO CARES'
   },
   {
-    id: 5,
+    id: 164,
     category: 4,
     ranking: 3,
     name: 'FLAT OOUT'
   },
   {
-    id: 6,
+    id: 165,
     category: 4,
     ranking: 3,
     name: 'GROUND STROKES'
   },
   {
-    id: 1,
+    id: 166,
     category: 4,
     ranking: 4,
     name: 'RED ONE'
   },
   {
-    id: 2,
+    id: 167,
     category: 4,
     ranking: 4,
     name: 'GRINGOS'
   },
   {
-    id: 3,
+    id: 168,
     category: 4,
     ranking: 4,
     name: 'GRANDSLAMMERS'
   },
   {
-    id: 4,
+    id: 169,
     category: 4,
     ranking: 4,
     name: 'COODABEENS'
   },
   {
-    id: 5,
+    id: 170,
     category: 4,
     ranking: 4,
     name: "PETE'S PRODIGIES"
   },
   {
-    id: 6,
+    id: 171,
     category: 4,
     ranking: 4,
     name: 'THE GROUP'
   },
   {
-    id: 7,
+    id: 172,
     category: 4,
     ranking: 4,
     name: 'BALLZ UP'
   },
   {
-    id: 8,
+    id: 173,
     category: 4,
     ranking: 4,
     name: 'DRUMMOS'
   },
   {
-    id: 1,
+    id: 174,
     category: 4,
     ranking: 5,
     name: 'FRIENDS'
   },
   {
-    id: 2,
+    id: 175,
     category: 4,
     ranking: 5,
     name: 'SPIN DOCTORS'
   },
   {
-    id: 3,
+    id: 176,
     category: 4,
     ranking: 5,
     name: 'DOUBLE FAULTS'
   },
   {
-    id: 4,
+    id: 177,
     category: 4,
     ranking: 5,
     name: 'TEAM ORCH'
   },
   {
-    id: 5,
+    id: 178,
     category: 4,
     ranking: 5,
     name: 'HACKS'
   },
   {
-    id: 6,
+    id: 179,
     category: 4,
     ranking: 5,
     name: 'DEUCEBAGS'
