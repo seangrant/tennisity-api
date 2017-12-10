@@ -250,7 +250,168 @@ const ladies = [
     category: 1,
     ranking: 6,
     name: 'Skinny Caps'
+  },
+
+  {
+    id: 37,
+    scheduleNumber: 1,
+    category: 1,
+    ranking: 7,
+    name: 'Mid Court Crisis'
+  },
+  {
+    id: 38,
+    scheduleNumber: 2,
+    category: 1,
+    ranking: 7,
+    name: 'M Cees'
+  },
+  {
+    id: 39,
+    scheduleNumber: 3,
+    category: 1,
+    ranking: 7,
+    name: '30 Loves'
+  },
+  {
+    id: 40,
+    scheduleNumber: 4,
+    category: 1,
+    ranking: 7,
+    name: 'Nite Lites'
+  },
+  {
+    id: 41,
+    scheduleNumber: 5,
+    category: 1,
+    ranking: 7,
+    name: 'Lettuce Atom'
+  },
+  {
+    id: 42,
+    scheduleNumber: 6,
+    category: 1,
+    ranking: 7,
+    name: 'Ins & Outs'
+  },
+
+  {
+    id: 43,
+    scheduleNumber: 1,
+    category: 1,
+    ranking: 8,
+    name: 'Breakaways'
+  },
+  {
+    id: 44,
+    scheduleNumber: 2,
+    category: 1,
+    ranking: 8,
+    name: 'Just Cruzin'
+  },
+  {
+    id: 45,
+    scheduleNumber: 3,
+    category: 1,
+    ranking: 8,
+    name: 'Good Idea'
+  },
+  {
+    id: 46,
+    scheduleNumber: 4,
+    category: 1,
+    ranking: 8,
+    name: 'Praying for Rain'
+  },
+  {
+    id: 47,
+    scheduleNumber: 5,
+    category: 1,
+    ranking: 8,
+    name: 'Girls Night Out'
+  },
+  {
+    id: 48,
+    scheduleNumber: 6,
+    category: 1,
+    ranking: 8,
+    name: 'Casual Sets'
+  },
+  {
+    id: 49,
+    scheduleNumber: 1,
+    category: 1,
+    ranking: 9,
+    name: 'Angry Birds'
+  },
+  {
+    id: 50,
+    scheduleNumber: 2,
+    category: 1,
+    ranking: 9,
+    name: 'Not Quite Right'
+  },
+  {
+    id: 51,
+    scheduleNumber: 3,
+    category: 1,
+    ranking: 9,
+    name: 'Spice Attack'
+  },
+  {
+    id: 51,
+    scheduleNumber: 4,
+    category: 1,
+    ranking: 9,
+    name: '4 Play'
+  },
+  {
+    id: 52,
+    scheduleNumber: 5,
+    category: 1,
+    ranking: 9,
+    name: 'Strung Out'
+  },
+  {
+    id: 53,
+    scheduleNumber: 6,
+    category: 1,
+    ranking: 9,
+    name: "Don't Think"
+  },
+  {
+    id: 55,
+    scheduleNumber: 2,
+    category: 1,
+    ranking: 10,
+    name: 'Untouchables'
+  },
+  {
+    id: 56,
+    scheduleNumber: 3,
+    category: 1,
+    ranking: 10,
+    name: 'Drop Shot Divas'
+  },
+  {
+    id: 57,
+    scheduleNumber: 4,
+    category: 1,
+    ranking: 10,
+    name: 'Dark Nights'
+  },
+  {
+    id: 58,
+    scheduleNumber: 5,
+    category: 1,
+    ranking: 10,
+    name: 'Simply Smashing'
+  },
+  {
+    id: 59,
+    scheduleNumber: 6,
+    category: 1,
+    ranking: 10,
+    name: 'Down the Line'
   }
 ];
-
-export default ladies;

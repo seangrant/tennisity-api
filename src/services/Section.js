@@ -1,28 +1,23 @@
 const sections = [
   {
     id: 1,
-    category: 'LADIES_DOUBLES',
-    rankings: [1, 2, 3, 4, 5, 6]
+    category: 'LADIES_DOUBLES'
   },
   {
     id: 2,
-    category: 'MENS_DOUBLES',
-    rankings: [1, 2, 3, 4, 5, 6]
+    category: 'MENS_DOUBLES'
   },
   {
     id: 3,
-    category: 'MIXED_DOUBLES',
-    rankings: [1, 2, 3, 4, 5, 6]
+    category: 'MIXED_DOUBLES'
   },
   {
     id: 4,
-    category: 'OPEN_DOUBLES',
-    rankings: [1, 2, 3, 4, 5, 6]
+    category: 'OPEN_DOUBLES'
   },
   {
     id: 5,
-    category: 'OPEN_SINGLES',
-    rankings: [1, 2, 3, 4, 5, 6]
+    category: 'OPEN_SINGLES'
   }
 ];
 

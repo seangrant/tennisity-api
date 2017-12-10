@@ -1,6 +1,10 @@
 import ladies from './Teamdata/Ladies';
 import mens from './Teamdata/Mens';
-const teams = [ladies, mens];
+import mixed from './Teamdata/Mens';
+import openSingles from './Teamdata/OpenSingles';
+
+const teams = [ladies, mens, mixed, openSingles];
+
 export const getTeams = ({ category, ranking }) => {
   const team = teams[category - 1] || [];
   return team.filter(
