@@ -4,13 +4,16 @@ import { GraphQLObjectType, GraphQLSchema } from 'graphql';
 // import currentUser from './queries/CurrentUser';
 import teams from './queries/Teams';
 import schedule from './queries/Schedule';
+import section, { allSections } from './queries/Section';
 //import mutation from './mutations';
 const query = new GraphQLObjectType({
   name: 'RootQueryType',
   description: 'This is the default root query provided by our application',
   fields: {
     teams,
-    schedule
+    schedule,
+    section,
+    allSections
   }
 });
 

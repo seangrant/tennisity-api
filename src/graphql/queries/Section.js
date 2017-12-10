@@ -6,11 +6,11 @@ import {
   GraphQLList
 } from 'graphql';
 
-import TeamType from '../types/Team';
-import { getTeams } from '../../services/Team';
+import SectionType from '../types/Section';
+import { getAllSections } from '../../services/Section';
 
 export default {
-  type: new GraphQLList(TeamType),
+  type: new GraphQLList(SectionType),
   description:
     'This will return the teams for a given category (optional) and ranking (optional)',
   args: {
@@ -24,5 +24,14 @@ export default {
   },
   resolve(parent, args, req) {
     return getTeams(args);
+  }
+};
+
+export const allSections = {
+  type: new GraphQLList(SectionType),
+  description:
+    'This will return the teams for a given category (optional) and ranking (optional)',
+  resolve(parent, args, req) {
+    return getAllSections();
   }
 };

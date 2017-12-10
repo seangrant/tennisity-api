@@ -1,49 +1,32 @@
-const sections = {
-  MONDAY_LADIES: {
+const sections = [
+  {
     id: 1,
-    name: 'Monday Ladies',
-    category: 'MONDAY_LADIES',
-    ranking: 1
+    category: 'LADIES_DOUBLES',
+    rankings: [1, 2, 3, 4, 5, 6]
+  },
+  {
+    id: 2,
+    category: 'MENS_DOUBLES',
+    rankings: [1, 2, 3, 4, 5, 6]
+  },
+  {
+    id: 3,
+    category: 'MIXED_DOUBLES',
+    rankings: [1, 2, 3, 4, 5, 6]
+  },
+  {
+    id: 4,
+    category: 'OPEN_DOUBLES',
+    rankings: [1, 2, 3, 4, 5, 6]
+  },
+  {
+    id: 5,
+    category: 'OPEN_SINGLES',
+    rankings: [1, 2, 3, 4, 5, 6]
   }
-};
+];
 
-export const getSection = (id, ranking) => sections[id];
-
-// {
-//   teams(group: "MONDAY_LADIES", section: 5){
-//     id,
-//     name,
-//     section{
-// 			name
-//   	},
-//     score(round: 4) {
-//       number
-//     }
-//   },
-//   currentRound
-// }
-
-// team: { id: 1, name: "Mary's muffins", section: "MONDAY_LADIES", group: 5 }
-// team: { id, 2, name: "Jane's Giants", section: "MONDAY_LADIES", group: 5 }
-//
-//
-//
-//
-//
-//
-//
-// {
-//   teams(category: "MONDAY_LADIES", ranking: 5, orderBy: score_DESC){
-//     team {
-//       id,
-//       name,
-//       section{
-//         category,
-//         ranking
-//       },
-//       score
-//     }
-//   }
-// }
-
-// teamQuery(group section) :TeamType
+export const getSectionById = id => sections.find(section => section.id === id);
+export const getSectionByCategory = category =>
+  sections.find(section => section.category === category);
+export const getAllSections = () => sections;
