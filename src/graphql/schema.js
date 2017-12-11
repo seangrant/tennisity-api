@@ -5,7 +5,7 @@ import { GraphQLObjectType, GraphQLSchema } from 'graphql';
 import teams from './queries/Teams';
 import schedule from './queries/Schedule';
 import section, { allSections } from './queries/Section';
-//import mutation from './mutations';
+import allClubs from './queries/Club';
 const query = new GraphQLObjectType({
   name: 'RootQueryType',
   description: 'This is the default root query provided by our application',
@@ -13,7 +13,8 @@ const query = new GraphQLObjectType({
     teams,
     schedule,
     section,
-    allSections
+    allSections,
+    allClubs
   }
 });
 
