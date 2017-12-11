@@ -8,8 +8,10 @@ import {
 
 import sectionType from './Section';
 import matchType from './Match';
+import clubType from './Club';
 import { getSection } from '../../services/Section';
 import { getScoreForTeam, getMatchesForTeam } from '../../services/Match';
+import { getClubById } from '../../services/Club';
 
 export default new GraphQLObjectType({
   name: 'Team',
@@ -47,6 +49,13 @@ export default new GraphQLObjectType({
       description: 'Matches for this team',
       resolve(parent, args) {
         return getMatchesForTeam(parent.id);
+      }
+    },
+    club: {
+      type: clubType,
+      description: 'The club this team belongs to',
+      resolve(parent, args) {
+        return getClubById(parent.club)
       }
     }
   })

@@ -4,42 +4,48 @@ const ladies = [
     scheduleNumber: 1,
     category: 1,
     ranking: 1,
-    name: 'Shot Girls'
+    name: 'Shot Girls',
+    club: 1
   },
   {
     id: 2,
     scheduleNumber: 2,
     category: 1,
     ranking: 1,
-    name: "BBB's"
+    name: "BBB's",
+    club: 2
   },
   {
     id: 3,
     scheduleNumber: 3,
     category: 1,
     ranking: 1,
-    name: 'Singles Anyone'
+    name: 'Singles Anyone',
+    club: 3
   },
   {
     id: 4,
     scheduleNumber: 4,
     category: 1,
     ranking: 1,
-    name: 'Whatever'
+    name: 'Whatever',
+    club: 4
   },
   {
     id: 5,
     scheduleNumber: 5,
     category: 1,
     ranking: 1,
-    name: 'Smashing'
+    name: 'Smashing',
+    club: 5
   },
   {
     id: 6,
     scheduleNumber: 6,
     category: 1,
     ranking: 1,
-    name: "O'Kays"
+    name: "O'Kays",
+    club: 6
   },
   {
     id: 7,
@@ -415,3 +421,5 @@ const ladies = [
     name: 'Down the Line'
   }
 ];
+
+export default ladies;

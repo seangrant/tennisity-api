@@ -39,11 +39,11 @@ export default new GraphQLObjectType({
       description: 'ID of the Rubber'
     },
     homePlayers: {
-      type: new GraphQLList(playerType),
+      type: new GraphQLList(GraphQLInt),
       description: 'players in match single or double'
     },
     awayPlayers: {
-      type: new GraphQLList(playerType),
+      type: new GraphQLList(GraphQLInt),
       description: 'players in match single or double'
     },
     result: {

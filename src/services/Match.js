@@ -2,6 +2,7 @@ import sum from 'lodash/sum';
 
 const Matches = [
   {
+    id: 1,
     category: 'MONDAY_LADIES',
     ranking: 1,
     homeTeamId: 1,
@@ -10,9 +11,11 @@ const Matches = [
     awayScore: 3,
     round: 1,
     tournament: 45,
-    club: 1
+    club: 1,
+    rubbers: [1, 2, 3]
   },
   {
+    id: 2,
     category: 'MONDAY_LADIES',
     ranking: 1,
     homeTeamId: 3,
@@ -21,9 +24,11 @@ const Matches = [
     awayScore: 3,
     round: 1,
     tournament: 45,
-    club: 2
+    club: 2,
+    rubbers: [1, 2, 3]
   },
   {
+    id: 3,
     category: 'MONDAY_LADIES',
     ranking: 1,
     homeTeamId: 5,
@@ -32,7 +37,8 @@ const Matches = [
     awayScore: 3,
     round: 1,
     tournament: 45,
-    club: 3
+    club: 3,
+    rubbers: [1, 2, 3]
   }
 ];
 
@@ -47,3 +53,6 @@ export const getScoreForTeam = teamId =>
       match => (match.homeTeamId == teamId ? match.homeScore : match.awayScore)
     )
   );
+
+export const getMatchById = matchId =>
+  Matches.find(match => match.id == matchId);
