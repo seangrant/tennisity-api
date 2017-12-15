@@ -2,6 +2,7 @@ import { GraphQLObjectType, GraphQLSchema } from 'graphql';
 
 // import users from './queries/User';
 // import currentUser from './queries/CurrentUser';
+import team from './queries/Team';
 import teams from './queries/Teams';
 import schedule from './queries/Schedule';
 import section, { allSections } from './queries/Section';
@@ -12,6 +13,7 @@ const query = new GraphQLObjectType({
   name: 'RootQueryType',
   description: 'This is the default root query provided by our application',
   fields: {
+    team,
     teams,
     schedule,
     section,
