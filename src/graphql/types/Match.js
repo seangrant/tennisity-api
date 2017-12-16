@@ -2,13 +2,16 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLID,
-  GraphQLInt
+  GraphQLInt,
+  GraphQLList
 } from 'graphql';
 
 import teamType from './Team';
 import clubType from './Club';
+import rubberType from './Rubber';
 import { getTeamById } from '../../services/Team';
 import { getClubById } from '../../services/Club';
+import { getRubbersById } from '../../services/Rubber';
 
 export default new GraphQLObjectType({
   name: 'Match',
@@ -54,6 +57,13 @@ export default new GraphQLObjectType({
       description: 'The club the match is being played',
       resolve({ club }, args) {
         return getClubById(club);
+      }
+    },
+    rubbers: {
+      type: new GraphQLList(rubberType),
+      description: 'The rubbers played for this match',
+      resolve({ rubbers }) {
+        return getRubbersById(rubbers);
       }
     }
   })
