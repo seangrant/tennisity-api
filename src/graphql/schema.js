@@ -7,7 +7,8 @@ import teams from './queries/Teams';
 import schedule from './queries/Schedule';
 import section, { allSections } from './queries/Section';
 import allClubs from './queries/Club';
-import match from './queries/match';
+import match from './queries/Match';
+import teamPlayers from './queries/Players';
 
 const query = new GraphQLObjectType({
   name: 'RootQueryType',
@@ -19,11 +20,12 @@ const query = new GraphQLObjectType({
     section,
     allSections,
     allClubs,
-    match
+    match,
+    teamPlayers
   }
 });
 
 module.exports = new GraphQLSchema({
   query
-  //mutation
+  // mutation
 });

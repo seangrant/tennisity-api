@@ -1,10 +1,4 @@
-import {
-  GraphQLObjectType,
-  GraphQLString,
-  GraphQLID,
-  GraphQLInt,
-  GraphQLList
-} from 'graphql';
+import { GraphQLInt } from 'graphql';
 
 import matchType from '../types/Match';
 import { getMatchById } from '../../services/Match';
@@ -18,7 +12,7 @@ export default {
       description: 'The match id'
     }
   },
-  resolve(parent, args, req) {
-    return getMatchById(args.id);
+  resolve(parent, { id }) {
+    return getMatchById(id);
   }
 };

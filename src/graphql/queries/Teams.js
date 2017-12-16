@@ -1,10 +1,4 @@
-import {
-  GraphQLObjectType,
-  GraphQLString,
-  GraphQLID,
-  GraphQLInt,
-  GraphQLList
-} from 'graphql';
+import { GraphQLInt, GraphQLList } from 'graphql';
 
 import TeamType from '../types/Team';
 import { getTeams } from '../../services/Team';
@@ -22,7 +16,7 @@ export default {
       type: GraphQLInt
     }
   },
-  resolve(parent, args, req) {
+  resolve(parent, args) {
     return getTeams(args);
   }
 };
