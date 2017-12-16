@@ -1,7 +1,6 @@
 import {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLID,
   GraphQLInt,
   GraphQLList
 } from 'graphql';
@@ -9,9 +8,11 @@ import {
 import sectionType from './Section';
 import matchType from './Match';
 import clubType from './Club';
+import playerType from './Player';
 import { getSection } from '../../services/Section';
 import { getScoreForTeam, getMatchesForTeam } from '../../services/Match';
 import { getClubById } from '../../services/Club';
+import { getPlayersForTeam } from '../../services/Player';
 
 export default new GraphQLObjectType({
   name: 'Team',
@@ -33,29 +34,36 @@ export default new GraphQLObjectType({
     section: {
       type: sectionType,
       description: 'team`s current section',
-      resolve(parent, args) {
-        return getSection(parent.category);
+      resolve({ category }) {
+        return getSection(category);
       }
     },
     score: {
       type: GraphQLInt,
       description: 'current score for team',
-      resolve(parent, args) {
-        return getScoreForTeam(parent.id);
+      resolve({ id }) {
+        return getScoreForTeam(id);
       }
     },
     matches: {
       type: new GraphQLList(matchType),
       description: 'Matches for this team',
-      resolve(parent, args) {
-        return getMatchesForTeam(parent.id);
+      resolve({ id }) {
+        return getMatchesForTeam(id);
       }
     },
     club: {
       type: clubType,
       description: 'The club this team belongs to',
-      resolve(parent, args) {
-        return getClubById(parent.club)
+      resolve({ club }) {
+        return getClubById(club);
+      }
+    },
+    players: {
+      type: new GraphQLList(playerType),
+      description: 'Players for team',
+      resolve({ id }) {
+        return getPlayersForTeam(id);
       }
     }
   })

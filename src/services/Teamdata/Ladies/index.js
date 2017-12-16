@@ -421,5 +421,3 @@ export default [
     name: 'Down the Line'
   }
 ];
-
-export default ladies;
