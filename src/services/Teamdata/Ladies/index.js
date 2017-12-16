@@ -1,4 +1,4 @@
-const ladies = [
+export default [
   {
     id: 1,
     scheduleNumber: 1,
