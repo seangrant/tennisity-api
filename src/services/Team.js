@@ -18,3 +18,5 @@ export const getTeamById = teamId => ladies.find(team => team.id === teamId);
 
 export const getTeamsByCategory = category =>
   ladies.filter(team => team.category === category);
+
+export const createTeam = arg => console.log({ arg });

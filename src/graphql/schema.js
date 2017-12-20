@@ -1,7 +1,5 @@
 import { GraphQLObjectType, GraphQLSchema } from 'graphql';
 
-// import users from './queries/User';
-// import currentUser from './queries/CurrentUser';
 import team from './queries/Team';
 import teams from './queries/Teams';
 import schedule from './queries/Schedule';
@@ -9,6 +7,7 @@ import section, { allSections } from './queries/Section';
 import allClubs from './queries/Club';
 import match from './queries/Match';
 import teamPlayers from './queries/Players';
+import mutation from './mutations/createTeam';
 
 const query = new GraphQLObjectType({
   name: 'RootQueryType',
@@ -26,6 +25,6 @@ const query = new GraphQLObjectType({
 });
 
 module.exports = new GraphQLSchema({
-  query
-  // mutation
+  query,
+  mutation
 });
